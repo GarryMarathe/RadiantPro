@@ -14,6 +14,7 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/Radiant"
 mongo = PyMongo(app)
 # bcrypt = Bcrypt(app)
 
+#routing for home page
 
 @app.route("/", methods=["GET"])
 def index():
@@ -36,7 +37,7 @@ def product():
 
 
 
-
+#routing for login page
 
 
 @app.route("/orders",methods=["GET","POST"])
